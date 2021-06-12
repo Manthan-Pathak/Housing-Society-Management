@@ -59,7 +59,7 @@ public partial class Admin_Default : System.Web.UI.Page
 
             SmtpClient smtp = new SmtpClient();
             smtp.Host = "smtp.gmail.com";
-            smtp.Credentials = new System.Net.NetworkCredential("pathak22mp@gmail.com", "myma9876");
+            smtp.Credentials = new System.Net.NetworkCredential("Your Email", "Your Password");
             smtp.Port = 587;
             smtp.EnableSsl = true;
 
