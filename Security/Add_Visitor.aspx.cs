@@ -47,7 +47,7 @@ public partial class Security_Add_Visitor : System.Web.UI.Page
         MailMessage mail = new MailMessage();
         string mailid = usremail.Text;
         mail.To.Add(mailid);
-        mail.From = new MailAddress("pathak22mp@gmail.com");
+        mail.From = new MailAddress("Your email");
         mail.Subject = "Knock Knock!" + ddl_type.SelectedValue + " is here for you!! Allow or Deny ";
         string body = "Hello! " + username.Text + "<br><br> Someone just came to visit you. <br><br> <table> <tr> <td> Visitor's Name: </td> <td>" + txtvname.Text + "</td> </tr><tr> <td> Visitor's Type: </td><td>" + ddl_type.SelectedValue + "</td></tr></table><br><br> Allow Or Deny the person from visitor's section. <br><br><br> Thank you.";
         mail.Body = body;
@@ -55,7 +55,7 @@ public partial class Security_Add_Visitor : System.Web.UI.Page
 
         SmtpClient smtp = new SmtpClient();
         smtp.Host = "smtp.gmail.com";
-        smtp.Credentials = new System.Net.NetworkCredential("pathak22mp@gmail.com", "myma9876");
+        smtp.Credentials = new System.Net.NetworkCredential("Your email", "Your pass");
         smtp.Port = 587;
         smtp.EnableSsl = true;
 
